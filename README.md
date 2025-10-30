@@ -46,62 +46,77 @@ npm run dev
 
 Vite dev server will start at 👉 http://localhost:5173
 
-🧱 Component Overview 📝 Input Component A flexible input field supporting:
+## 🧱 Component Overview
 
-Labels
+### 📝 Input Component
 
-Clearable state (with ✕ icon)
+A flexible input field supporting:
 
-Password visibility toggle (👁️)
+- Labels
 
-Works with all input types (text, password, number, etc.)
+- Clearable state (with ✕ icon)
 
-Props:
+- Password visibility toggle (👁️)
 
-Prop Type Default Description label string — Optional input label clearable
-boolean false Shows ✕ button to clear input type string 'text' Input type value
-string — Controlled input value onChange (e) => void — Change handler
+- Works with all input types (text, password, number, etc.)
 
-Preview:
+**_Props:_**
 
-🔔 Toast Component A dismissible notification component.
+| Prop        | Type          | Default  | Description                   |
+| ----------- | ------------- | -------- | ----------------------------- |
+| `label`     | `string`      | —        | Optional input label          |
+| `clearable` | `boolean`     | `false`  | Shows ✕ button to clear input |
+| `type`      | `string`      | `'text'` | Input type                    |
+| `value`     | `string`      | —        | Controlled input value        |
+| `onChange`  | `(e) => void` | —        | Change handler                |
 
-Behavior:
+### 🔔 Toast Component
 
-Appears in the bottom-right corner
+A dismissible notification component.
 
-Auto-dismisses after a given duration
+**_Behavior:_**
 
-Smooth fade/slide transitions
+- Appears in the bottom-right corner
 
-Optional manual close button
+- Auto-dismisses after a given duration
 
-Props:
+- Smooth fade/slide transitions
 
-Prop Type Default Description message string — Toast message text type 'success'
-| 'error' | 'info' | 'warning' 'info' Visual style variant duration number 3000
-Auto-dismiss duration (ms)
+- Optional manual close button
 
-Preview:
+**_Props:_**
 
-📂 SidebarMenu Component A sliding sidebar navigation with nested submenus.
+| Prop        | Type          | Default  | Description                   |
+| ----------- | ------------- | -------- | ----------------------------- |
+| `label`     | `string`      | —        | Optional input label          |
+| `clearable` | `boolean`     | `false`  | Shows ✕ button to clear input |
+| `type`      | `string`      | `'text'` | Input type                    |
+| `value`     | `string`      | —        | Controlled input value        |
+| `onChange`  | `(e) => void` | —        | Change handler                |
 
-Behavior:
+### 📂 SidebarMenu Component
 
-Slides in from the right
+A sliding sidebar navigation with nested submenus.
 
-Supports multi-level expandable submenus
+**_Behavior:_**
 
-Closes when clicking the background or the close button
+- Slides in from the right
 
-Built with Framer Motion
+- Supports multi-level expandable submenus
 
-Props:
+- Closes when clicking the background or the close button
 
-Prop Type Description isOpen boolean Whether the sidebar is visible onClose ()
-=> void Called when the sidebar closes items MenuItem[] Menu structure
+- Built with Framer Motion
 
-MenuItem type:
+**_Props:_**
+
+| Prop      | Type         | Description                    |
+| --------- | ------------ | ------------------------------ |
+| `isOpen`  | `boolean`    | Whether the sidebar is visible |
+| `onClose` | `() => void` | Called when the sidebar closes |
+| `items`   | `MenuItem[]` | Menu structure                 |
+
+**MenuItem type:**
 
 ```ts
 {
@@ -111,18 +126,17 @@ MenuItem type:
 }
 ```
 
-Preview:
+## 🧪 Storybook Documentation
 
-🧪 Storybook Documentation Each component is fully documented with interactive
-stories in Storybook:
+Each component is fully documented with interactive stories in Storybook:
 
-Variants for each type (where applicable)
+- Variants for each type (where applicable)
 
-Different states and durations
+- Different states and durations
 
-With/without optional props
+- With/without optional props
 
-Controls for live prop editing
+- Controls for live prop editing
 
 To view stories:
 
@@ -130,55 +144,77 @@ To view stories:
 npm run storybook
 ```
 
-🛠️ Tech Stack ⚛️ React 18
+## 🛠️ Tech Stack
 
-🧩 TypeScript
+- ⚛️ React 18
 
-🎨 Tailwind CSS
+- 🧩 TypeScript
 
-🧱 Storybook
+- 🎨 Tailwind CSS
 
-✨ Framer Motion (for Sidebar animation)
+- 🧱 Storybook
 
-📦 Vite
+- ✨ Framer Motion (for Sidebar animation)
 
-📸 Screenshots Storybook UI Input
+- 📦 Vite
+
+## 📸 Screenshots
+
+### Storybook UI
+
+**_Input_**
+
 <img src="/public/screenshots/storybook-input.png" alt="Storybook Input Screenshot" width="30%"/>
 
-Toast
+**_Toast_**
+
 <img src="/public/screenshots/storybook-toast.png" alt="Storybook Toast Screenshot" width="30%"/>
 
-Sidebar Menu
+**_Sidebar Menu_**
+
 <img src="/public/screenshots/storybook-sidebar-menu.png" alt="Storybook SidebarMenu Screenshot" width="30%"/>
 
-Component States Text Input
+### Component States
+
+**_Text Input_**
+
 <img src="/public/screenshots/text-input.png" alt="Text Input Screenshot" width="30%"/>
 <img src="/public/screenshots/text-input-clearable.png" alt="Text Input Screenshot" width="30%"/>
 
-Password Input (visible)
+**_Password Input (visible)_**
+
 <img src="/public/screenshots/password-input-visible.png" alt="Password Input with eye icon Screenshot" width="30%"/>
 <img src="/public/screenshots/password-input-clearable.png" alt="Password Input clearable Screenshot" width="30%"/>
 
-Number Input
+**_Number Input_**
+
 <img src="/public/screenshots/number-input.png" alt="Number Input Screenshot" width="30%"/>
 <img src="/public/screenshots/number-input-clearable.png" alt="Number Input clearable Screenshot" width="30%"/>
 
-Success Toast
-<img src="/public/screenshots/success-toast-close.png" alt="Success Toast Screenshot" width="30%"/>
+**_Success Toast_**
 
-Error Toast
-<img src="/public/screenshots/error-toast-close.png" alt="Error Toast Screenshot" width="30%"/>
+<img src="/public/screenshots/success-toast-close-btn.png" alt="Success Toast Screenshot" width="30%"/>
 
-Info Toast
+**_Error Toast_**
+
+<img src="/public/screenshots/error-toast-close-btn.png" alt="Error Toast Screenshot" width="30%"/>
+
+**_Info Toast_**
+
 <img src="/public/screenshots/info-toast.png" alt="Info Toast Screenshot" width="30%"/>
 
-Warning Toast
-<img src="/public/screenshots/warning-toast-close.png" alt="Warning Toast Screenshot" width="30%"/>
+**_Warning Toast_**
 
-Sidebar (1 level)
+<img src="/public/screenshots/warning-toast-close-btn.png" alt="Warning Toast Screenshot" width="30%"/>
+
+**_Sidebar (1 level)_**
+
 <img src="/public/screenshots/one-level-menu.png" alt="Sidebar 1-level Screenshot" width="30%"/>
 
-Sidebar (2 levels)
+**_Sidebar (2 levels)_**
+
 <img src="/public/screenshots/two-level-menu.png" alt="Sidebar 2-level Screenshot" width="30%"/>
 
-📄 License MIT © 2025 Tamila Yefimenko
+## 📄 License
+
+MIT © 2025 **Tamila Yefimenko**
