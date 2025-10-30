@@ -15,26 +15,25 @@ Includes three customizable components:
 
 ### 1️⃣ Clone the repository
 
-```bash
+````bash
 git clone https://github.com/tamila-yefimenko/react-component-library
 cd ui-components
-2️⃣ Install dependencies
-bash
-Копіювати код
+
+### 2️⃣ Install dependencies
+```bash
 npm install
-3️⃣ Run Storybook
+
+### 3️⃣ Run Storybook
 To preview all components in isolation:
 
-bash
-Копіювати код
+```bash
 npm run storybook
 Storybook will start at 👉 http://localhost:6006
 
-4️⃣ Run the demo app
+### 4️⃣ Run the demo app
 To see the components in the sample app:
 
-bash
-Копіювати код
+```bash
 npm run dev
 Vite dev server will start at 👉 http://localhost:5173
 
@@ -110,8 +109,7 @@ items	MenuItem[]	Menu structure
 
 MenuItem type:
 
-ts
-Копіювати код
+```ts
 {
   label: string;
   onClick?: () => void;
@@ -135,8 +133,7 @@ Controls for live prop editing
 
 To view stories:
 
-bash
-Копіювати код
+```bash
 npm run storybook
 🛠️ Tech Stack
 ⚛️ React 18
@@ -186,4 +183,4 @@ Sidebar (2 levels)
 
 📄 License
 MIT © 2025 Tamila Yefimenko
-```
+````
