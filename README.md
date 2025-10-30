@@ -16,26 +16,27 @@ Includes three customizable components:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone hhttps://github.com/tamila-yefimenko/react-component-library
+git clone https://github.com/tamila-yefimenko/react-component-library
 cd ui-components
 2️⃣ Install dependencies
 bash
+Копіювати код
 npm install
 3️⃣ Run Storybook
 To preview all components in isolation:
 
 bash
+Копіювати код
 npm run storybook
-Storybook will start at
-👉 http://localhost:6006
+Storybook will start at 👉 http://localhost:6006
 
 4️⃣ Run the demo app
 To see the components in the sample app:
 
 bash
+Копіювати код
 npm run dev
-Vite dev server will start at
-👉 http://localhost:5173
+Vite dev server will start at 👉 http://localhost:5173
 
 🧱 Component Overview
 📝 Input Component
@@ -62,6 +63,7 @@ Preview:
 
 
 
+
 🔔 Toast Component
 A dismissible notification component.
 
@@ -83,6 +85,7 @@ type	'success' | 'error' | 'info' | 'warning'	'info'	Visual style variant
 duration	number	3000	Auto-dismiss duration (ms)
 
 Preview:
+
 
 
 📂 SidebarMenu Component
@@ -118,6 +121,7 @@ Preview:
 
 
 
+
 🧪 Storybook Documentation
 Each component is fully documented with interactive stories in Storybook:
 
@@ -132,6 +136,7 @@ Controls for live prop editing
 To view stories:
 
 bash
+Копіювати код
 npm run storybook
 🛠️ Tech Stack
 ⚛️ React 18
@@ -147,51 +152,37 @@ npm run storybook
 📦 Vite
 
 📸 Screenshots
+Storybook UI
+Input
+<img src="./screenshots/storybook-input.png" alt="Storybook Input Screenshot" width="30%"/>
 
-Storybook UI displaying Input
-<img src="/screenshots/storybook-input.png" alt="Storybook Input Screenshot" style="width:30%;"/>
+Toast
+<img src="./screenshots/storybook-toast.png" alt="Storybook Toast Screenshot" width="30%"/>
 
-Storybook UI displaying Toast
-<img src="/screenshots/storybook-toast.png" alt="Storybook Toast Screenshot" style="width:30%;"/>
+Sidebar Menu
+<img src="./screenshots/storybook-sidebar-menu.png" alt="Storybook SidebarMenu Screenshot" width="30%"/>
 
-Storybook UI displaying SidebarMenu
-<img src="/screenshots/storybook-sidebar-menu.png" alt="Storybook SidebarMenu Screenshot" style="width:30%;"/>
+Component States
+Text Input
+<img src="./screenshots/text-input.png" alt="Text Input Screenshot" width="30%"/>
 
-Input type="text"
-<img src="/screenshots/text-input.png" alt="Text Input Screenshot" style="width:30%;"/>
+Password Input (visible)
+<img src="./screenshots/password-input-visible.png" alt="Password Input with eye icon Screenshot" width="30%"/>
 
-Input type="text" clearable
-<img src="/screenshots/text-input-clearable.png" alt="Text Input clearable Screenshot" style="width:30%;"/>
+Number Input
+<img src="./screenshots/number-input.png" alt="Number Input Screenshot" width="30%"/>
 
-Input type="password" with eye icon
-<img src="/screenshots/password-input-visible.png" alt="Password Input with eye icon Screenshot" style="width:30%;"/>
+Success Toast
+<img src="./screenshots/success-toast-close.png" alt="Success Toast Screenshot" width="30%"/>
 
-Input type="password" with eye icon clearable
-<img src="/screenshots/password-input-clearable.png" alt="Password Input clearable Screenshot" style="width:30%;"/>
+Error Toast
+<img src="./screenshots/error-toast-close.png" alt="Error Toast Screenshot" width="30%"/>
 
-Input type="number"
-<img src="/screenshots/number-input.png" alt="Number Input Screenshot" style="width:30%;"/>
+Sidebar (1 level)
+<img src="./screenshots/one-level-menu.png" alt="Sidebar 1-level Screenshot" width="30%"/>
 
-Input type="number" clearable
-<img src="/screenshots/number-input-clearable.png" alt="Number Input clearable Screenshot" style="width:30%;"/>
-
-Success Toast with close button
-<img src="/screenshots/success-toast-close.png" alt="Success Toast Screenshot" style="width:30%;"/>
-
-Error Toast with close button
-<img src="/screenshots/error-toast-close.png" alt="Error Toast Screenshot" style="width:30%;"/>
-
-Info Toast without close button
-<img src="/screenshots/info-toast.png" alt="Info Toast Screenshot" style="width:30%;"/>
-
-Warning Toast with close button
-<img src="/screenshots/warning-toast-close.png" alt="Warning Toast Screenshot" style="width:30%;"/>
-
-Sidebar Menu with 1-level nested items
-<img src="/screenshots/one-level-menu.png" alt="Sidebar Menu 1-level Screenshot" style="width:30%;"/>
-
-Sidebar Menu with 2-level nested items
-<img src="/screenshots/two-level-menu.png" alt="Sidebar Menu 2-level Screenshot" style="width:30%;"/>
+Sidebar (2 levels)
+<img src="./screenshots/two-level-menu.png" alt="Sidebar 2-level Screenshot" width="30%"/>
 
 📄 License
 MIT © 2025 Tamila Yefimenko
